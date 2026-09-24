@@ -1,0 +1,8 @@
+/* Hero editor: light canvas, full-bleed container. */
+.wp-block-smart-blocks-hero {
+	background: #ffffff;
+	color: #23213a;
+	border-radius: 18px;
+	padding-block: 1rem;
+	[data-rich-text-placeholder]::after { color: rgba(35,33,58,0.4); }
+}

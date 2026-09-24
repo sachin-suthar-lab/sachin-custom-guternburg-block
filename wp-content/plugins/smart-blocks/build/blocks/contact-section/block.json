@@ -1,0 +1,85 @@
+{
+  "$schema": "https://schemas.wp.org/trunk/block.json",
+  "apiVersion": 3,
+  "name": "smart-blocks/contact-section",
+  "title": "Contact Section",
+  "category": "smart-blocks",
+  "icon": "email-alt",
+  "description": "Enterprise contact section: intro, editable channels, AJAX form with inline validation.",
+  "keywords": [
+    "contact",
+    "form",
+    "email"
+  ],
+  "textdomain": "smart-blocks",
+  "supports": {
+    "align": [
+      "full"
+    ],
+    "html": false,
+    "anchor": true,
+    "reusable": true
+  },
+  "attributes": {
+    "eyebrow": {
+      "type": "string",
+      "default": "Contact"
+    },
+    "heading": {
+      "type": "string",
+      "default": "Let's build something durable together."
+    },
+    "dek": {
+      "type": "string",
+      "default": "Drop a note about your project, timeline, and stack. I read every message and reply within two working days."
+    },
+    "asideTitle": {
+      "type": "string",
+      "default": "Channels"
+    },
+    "asideIntro": {
+      "type": "string",
+      "default": "Pick whatever's easiest. For project enquiries, the form below gets the fastest reply."
+    },
+    "submitLabel": {
+      "type": "string",
+      "default": "Send message"
+    },
+    "channels": {
+      "type": "array",
+      "default": [
+        {
+          "icon": "mail",
+          "label": "Email",
+          "value": "sachin.suthar2493@gmail.com",
+          "href": "mailto:sachin.suthar2493@gmail.com"
+        },
+        {
+          "icon": "linkedin",
+          "label": "LinkedIn",
+          "value": "in/sachin-wordpress-developer",
+          "href": "https://www.linkedin.com/in/sachin-wordpress-developer/"
+        },
+        {
+          "icon": "github",
+          "label": "GitHub",
+          "value": "github.com/sachin5713",
+          "href": "https://github.com/sachin5713/"
+        },
+        {
+          "icon": "bolt",
+          "label": "Phone",
+          "value": "+91 97263 37383",
+          "href": "tel:+919726337383"
+        }
+      ]
+    }
+  },
+  "editorScript": "file:./index.js",
+  "editorStyle": "file:./index.css",
+  "style": [
+    "smart-blocks-shared",
+    "file:./style-index.css"
+  ],
+  "viewScript": "file:./view.js"
+}
